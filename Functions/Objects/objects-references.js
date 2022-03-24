@@ -20,21 +20,26 @@ let resetAccount = function(account) {
 
 }
 // PRINT ACCOUNT BALANCE SUMMARY (myAccounSummary)
+// Account for Victor has $900. $1000 in income. $100 in expensees.
 let myAccountSummary = function (account) {
     let balance = account.income - account.expenses
     return `Account for ${account.name} has $${balance}. $${account.addExpense} in income. $${account.expenses} in expenses `
 }
-addIncome(myAccount, 1000)
-addExpense(myAccount,100)
-addExpense(myAccount, 120)
-// Account for Victor has $900. $1000 in income. $100 in expensees.
-console.log(myAccountSummary(myAccount))
-resetAccount(myAccount)
-console.log(myAccountSummary(myAccount))
+
 
 // add Income
 // addExpense
 // addExpense
+
+addIncome(myAccount, 1000)
+addExpense(myAccount,100)
+addExpense(myAccount, 120)
+
 // getAccountSummary
 // resetAccount
 // getAccountSummary
+console.log(myAccountSummary(myAccount))
+resetAccount(myAccount)
+console.log(myAccountSummary(myAccount))
+
+
